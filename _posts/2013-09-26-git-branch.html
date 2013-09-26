@@ -1,0 +1,22 @@
+---
+layout: default
+title: git分支管理
+---
+
+<h2>{{ page.title }}</h2>
+<p>使用Git Bash和Git GUI工具实际操作</p>
+<h3>一，开发分支</h3>
+<p>一般有两个分支，默认主分支master，日常开发分支develop</p>
+<p>从主分支master创建开发分支develop</p>
+<p>git branch develop master</p>
+<p>查看当前所有分支：git branch -a</p>
+<p>切换分支：git checkout develop</p>
+<p>在分支操作后，添加修改文件，未进行add跟踪和提交，直接切换分支会看到如下错误</p>
+<p>图：branch1</p>
+<p>需要commit后才可以切换分支</p>
+<h3>二，分支合并</h3>
+<p>--no-ff参数，区别</p>
+<p>在Git GUI中可以看到对仓库操作的可视化结果</p>
+<p>黄色的圆点是当前所在分支位置，读者可以在master和develop分支中切换查看效果</p>
+<h3>三，临时分支</h3>
+<p>{{ page.date | date_to_string }}</p>
