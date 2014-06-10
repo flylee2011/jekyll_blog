@@ -1,0 +1,15 @@
+---
+layout: default
+title: git和快盘的结合使用
+---
+
+<h2>{{ page.title }}</h2>
+<p>git init</p>
+<p>git remote add origin xxx</p>
+<p>git pull</p>
+<p>git add .</p>
+<p>如果当前目录有文件，没有被跟踪，需要执行git add .，否则直接切换到远程分支会报错:
+error: The following untracked working tree files would be overwritten by checkout...
+</p>
+<p>git checkout --track origin/[分支名]</p>
+<p>{{ page.date | date_to_string }}</p>
